@@ -32,7 +32,7 @@ class DepotManager(object):
     def get_default(cls):
         """Retrieves the current application default depot"""
         if cls._default_depot is None:
-            raise RuntimeError('Not depots have been configured!')
+            raise RuntimeError('No default depot currently configured')
         return cls._default_depot
 
     @classmethod
